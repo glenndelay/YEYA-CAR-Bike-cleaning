@@ -26,7 +26,7 @@ export function PageShell({ eyebrow, title, intro, image, imageAlt, children }: 
           </Reveal>
           <Reveal delay={0.08}>
             <div className="overflow-hidden rounded-[28px] shadow-luxury">
-              <Image src={image} alt={imageAlt} width={900} height={680} className="aspect-[4/3] w-full object-cover" />
+              <Image src={image} alt={imageAlt} width={1200} height={900} sizes="(min-width: 1024px) 45vw, 100vw" className="aspect-[4/3] w-full object-cover object-center" />
             </div>
           </Reveal>
         </div>

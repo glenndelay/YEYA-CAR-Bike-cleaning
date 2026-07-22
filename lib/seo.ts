@@ -7,17 +7,10 @@ export const localBusinessSchema = {
   description: "Kleinschalig poets- en detailingbedrijf voor auto's en motoren. Auto poetsen, motor poetsen, auto detailing, polijsten en lakbescherming.",
   telephone: company.phone,
   email: company.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Voorbeeldstraat 12",
-    postalCode: "1234 AB",
-    addressLocality: "Amsterdam",
-    addressCountry: "NL"
-  },
   openingHours: ["Mo-Fr 08:30-18:00", "Sa 09:00-16:00"],
   priceRange: "€€€",
-  image: "https://www.voorbeeld-detailing.nl/images/yeya-logo.png",
-  url: "https://www.voorbeeld-detailing.nl"
+  image: "https://yeya-car-bike-cleaning.vercel.app/images/yeya-logo.png",
+  url: "https://yeya-car-bike-cleaning.vercel.app"
 };
 
 export const faqSchema = {

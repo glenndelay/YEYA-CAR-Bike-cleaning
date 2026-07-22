@@ -75,7 +75,7 @@ export function TemplateTwoFooter() {
         <div>
           <p className="mb-4 font-display font-semibold">Contact</p>
           <div className="grid gap-3 text-white/70">
-            <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="flex items-center gap-2 hover:text-[#f1c36b]"><Phone size={16} /> {company.phone}</a>
+            <a href={`tel:${company.phoneHref}`} className="flex items-center gap-2 hover:text-[#f1c36b]"><Phone size={16} /> {company.phone}</a>
             <a href={`mailto:${company.email}`} className="flex items-center gap-2 hover:text-[#f1c36b]"><Mail size={16} /> {company.email}</a>
             <p className="flex items-start gap-2"><MapPin size={16} className="mt-1 shrink-0" /> {company.address}</p>
           </div>
@@ -157,7 +157,7 @@ export function T2ContactBand() {
       <div className="container-premium grid items-center gap-8 lg:grid-cols-[1fr_.85fr]">
         <T2SectionIntro label="Contact" title="Benieuwd wat past bij jouw auto of motor?" text="Stuur gerust een bericht. We denken eerlijk mee over wassen, poetsen, detailing, polijsten en bescherming." />
         <div className="rounded-[26px] bg-white p-6 shadow-[0_18px_48px_rgba(31,41,38,.1)]">
-          <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="focus-ring flex items-center gap-3 rounded-2xl p-3 font-semibold text-[#1f2926]">
+          <a href={`tel:${company.phoneHref}`} className="focus-ring flex items-center gap-3 rounded-2xl p-3 font-semibold text-[#1f2926]">
             <Phone className="text-[#2f5f55]" />
             {company.phone}
           </a>

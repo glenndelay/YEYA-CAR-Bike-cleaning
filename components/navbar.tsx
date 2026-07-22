@@ -65,7 +65,7 @@ export function Navbar() {
         </div>
         <div className="flex items-center gap-2 lg:hidden">
           <a
-            href={`tel:${company.phone.replace(/\s/g, "")}`}
+            href={`tel:${company.phoneHref}`}
             aria-label="Bel ons"
             className="focus-ring grid h-11 w-11 place-items-center rounded-full bg-gold text-ink md:hidden"
           >

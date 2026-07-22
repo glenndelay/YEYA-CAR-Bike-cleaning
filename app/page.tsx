@@ -48,7 +48,7 @@ function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="/contact">Neem vrijblijvend contact op</ButtonLink>
-            <ButtonLink href="/wassen-poetsen" variant="ghost">Bekijk wat we doen</ButtonLink>
+            <ButtonLink href="#wat-we-doen" variant="ghost">Bekijk wat we doen</ButtonLink>
           </div>
         </Reveal>
         <Reveal delay={0.1}>
@@ -110,7 +110,7 @@ function Welcome() {
 
 function Services() {
   return (
-    <section className="section-padding bg-[#f8f6fb] dark:bg-graphite">
+    <section id="wat-we-doen" className="section-padding scroll-mt-28 bg-[#f8f6fb] dark:bg-graphite">
       <div className="container-premium">
         <Reveal>
           <SectionHeading align="center" eyebrow="Wat we doen" title="Poetsen, wassen en detailen voor auto's en motoren." />
@@ -356,7 +356,7 @@ function Contact() {
             text="Neem vrijblijvend contact op. We denken graag met je mee, of het nu gaat om auto wassen, auto poetsen op locatie, motor poetsen, auto detailing, polijsten, lakcorrectie of keramische coating."
           />
           <div className="mt-8 grid gap-4 text-ink/75 dark:text-white/72">
-            <a className="focus-ring flex items-center gap-3 rounded-2xl p-2" href={`tel:${company.phone.replace(/\s/g, "")}`}><Phone className="text-purple dark:text-gold" /> {company.phone}</a>
+            <a className="focus-ring flex items-center gap-3 rounded-2xl p-2" href={`tel:${company.phoneHref}`}><Phone className="text-purple dark:text-gold" /> {company.phone}</a>
             <a className="focus-ring flex items-center gap-3 rounded-2xl p-2" href={`mailto:${company.email}`}><Mail className="text-purple dark:text-gold" /> {company.email}</a>
             <p className="flex items-center gap-3 p-2"><MapPin className="text-purple dark:text-gold" /> {company.address}</p>
             <div className="rounded-[22px] bg-white p-5 dark:bg-white/[0.06]">
@@ -395,7 +395,7 @@ function Footer() {
         <div>
           <p className="mb-4 font-display font-semibold">Contact</p>
           <div className="grid gap-2 text-white/70">
-            <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="hover:text-gold">{company.phone}</a>
+            <a href={`tel:${company.phoneHref}`} className="hover:text-gold">{company.phone}</a>
             <a href={`mailto:${company.email}`} className="hover:text-gold">{company.email}</a>
             <a href="https://www.instagram.com/" className="hover:text-gold">{company.instagram}</a>
           </div>

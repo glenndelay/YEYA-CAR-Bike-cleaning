@@ -24,7 +24,7 @@ export function FloatingActions() {
         <MessageCircle size={22} />
       </a>
       <a
-        href={`tel:${company.phone.replace(/\s/g, "")}`}
+        href={`tel:${company.phoneHref}`}
         aria-label="Bel direct"
         className="focus-ring grid h-[52px] w-[52px] place-items-center rounded-full bg-ink text-white shadow-luxury transition hover:-translate-y-1 md:hidden"
       >

@@ -7,7 +7,7 @@ import { company } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.voorbeeld-detailing.nl"),
+  metadataBase: new URL("https://yeya-car-bike-cleaning.vercel.app"),
   title: {
     default: `${company.name} | Auto poetsen en motor detailing`,
     template: `%s | ${company.name}`
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${company.name} | Elke auto en elke motor verdient aandacht`,
     description: "Eerlijk en persoonlijk poetsen en detailen voor auto's en motoren.",
-    url: "https://www.voorbeeld-detailing.nl",
+    url: "https://yeya-car-bike-cleaning.vercel.app",
     siteName: company.name,
     images: [{ url: "/images/yeya-logo.png", width: 1280, height: 1280, alt: "YEYA CAR & Bike Detailing logo" }],
     locale: "nl_NL",

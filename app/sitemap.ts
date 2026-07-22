@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://www.voorbeeld-detailing.nl";
+const baseUrl = "https://yeya-car-bike-cleaning.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

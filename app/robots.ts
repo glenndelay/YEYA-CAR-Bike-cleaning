@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://www.voorbeeld-detailing.nl/sitemap.xml"
+    sitemap: "https://yeya-car-bike-cleaning.vercel.app/sitemap.xml"
   };
 }

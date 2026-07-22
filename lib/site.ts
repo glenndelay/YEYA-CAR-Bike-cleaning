@@ -21,10 +21,11 @@ export const company = {
   name: "YEYA CAR & Bike Detailing",
   shortName: "YEYA CAR",
   slogan: "Elke auto en elke motor verdient aandacht.",
-  phone: "+31 6 12 34 56 78",
-  email: "info@yeyacar.nl",
-  address: "Voorbeeldstraat 12, 1234 AB Amsterdam",
-  whatsapp: "31612345678",
+  phone: "06 42 53 86 20",
+  phoneHref: "+31642538620",
+  email: "yeyacarcleaning@gmail.com",
+  address: "Op afspraak, locatie in overleg",
+  whatsapp: "31642538620",
   hours: ["Ma - Vr: 08:30 - 18:00", "Za: 09:00 - 16:00", "Zo: op afspraak"],
   instagram: "@yeyacar"
 };

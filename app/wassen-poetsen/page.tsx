@@ -24,8 +24,8 @@ export default function WashingPage() {
       eyebrow="Wassen & Poetsen"
       title="Voor een frisse, schone en verzorgde auto of motor."
       intro="Wassen en poetsen is geschikt wanneer je voertuig weer netjes moet zijn voor dagelijks gebruik. Geen ingewikkeld verhaal, maar gewoon goed onderhoud met aandacht."
-      image="/images/detailing1.jpg"
-      imageAlt="Auto wordt met de hand gewassen"
+      image="/images/mercedes-wassen-poetsen.jpg"
+      imageAlt="Zwarte Mercedes na professionele was- en poetsbehandeling"
     >
       <TextBlock title="Regulier onderhoud dat je voertuig netjes houdt">
         <p>

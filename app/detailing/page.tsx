@@ -25,8 +25,8 @@ export default function DetailingPage() {
       eyebrow="Detailing"
       title="Detailing gaat verder dan normaal poetsen."
       intro="Detailing is bedoeld voor mensen die hun auto of motor echt in goede conditie willen brengen of houden. We kijken rustig naar wat jouw voertuig nodig heeft."
-      image="/images/polishing.jpg"
-      imageAlt="Lak wordt zorgvuldig gepolijst"
+      image="/images/witte-auto-detailing.jpg"
+      imageAlt="Witte auto met glanzende lak na professionele detailing"
     >
       <TextBlock title="Maatwerk voor lak, interieur en bescherming">
         <p>

@@ -16,24 +16,24 @@ export default function ContactPage() {
       <section className="px-5 pb-20 sm:px-8 lg:px-12 lg:pb-28">
         <div className="container-premium grid gap-10 lg:grid-cols-[.85fr_1.15fr]">
           <Reveal>
-            <div className="max-w-3xl">
+            <div className="max-w-3xl rounded-[28px] bg-navy p-6 text-white shadow-luxury sm:p-8">
               <p className="mb-4 font-display text-sm font-semibold uppercase tracking-[0.22em] text-gold">Contact</p>
-              <h1 className="font-display text-4xl font-semibold leading-tight text-ink dark:text-white sm:text-5xl">
+              <h1 className="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">
                 Benieuwd wat we voor jouw auto of motor kunnen betekenen?
               </h1>
-              <p className="mt-6 text-lg leading-8 text-ink/72 dark:text-white/72">
+              <p className="mt-6 text-lg leading-8 text-white/80">
                 Stuur gerust een bericht. We denken graag met je mee over wassen, poetsen, detailing, polijsten en bescherming.
               </p>
             </div>
 
-            <div className="mt-8 grid gap-4 text-ink/75 dark:text-white/72">
-              <a className="focus-ring flex items-center gap-3 rounded-2xl border border-ink/10 bg-white p-4 shadow-luxury transition hover:-translate-y-0.5 hover:border-gold dark:border-white/10 dark:bg-white/[0.06]" href={`tel:${company.phone.replace(/\s/g, "")}`}>
+            <div className="mt-8 grid gap-4 text-ink dark:text-white">
+              <a className="focus-ring flex items-center gap-4 rounded-2xl border border-ink/10 bg-white p-5 text-lg leading-7 shadow-luxury transition hover:-translate-y-0.5 hover:border-gold dark:border-white/10 dark:bg-white/[0.08]" href={`tel:${company.phoneHref}`}>
                 <Phone className="text-gold" />
-                {company.phone}
+                <span><span className="block text-sm font-semibold uppercase tracking-wide text-ink/55 dark:text-white/60">Telefoon</span>{company.phone}</span>
               </a>
-              <a className="focus-ring flex items-center gap-3 rounded-2xl border border-ink/10 bg-white p-4 shadow-luxury transition hover:-translate-y-0.5 hover:border-gold dark:border-white/10 dark:bg-white/[0.06]" href={`mailto:${company.email}`}>
+              <a className="focus-ring flex items-center gap-4 rounded-2xl border border-ink/10 bg-white p-5 text-lg leading-7 shadow-luxury transition hover:-translate-y-0.5 hover:border-gold dark:border-white/10 dark:bg-white/[0.08]" href={`mailto:${company.email}`}>
                 <Mail className="text-gold" />
-                {company.email}
+                <span className="min-w-0"><span className="block text-sm font-semibold uppercase tracking-wide text-ink/55 dark:text-white/60">E-mail</span><span className="break-all">{company.email}</span></span>
               </a>
               <p className="flex items-center gap-3 rounded-2xl border border-ink/10 bg-white p-4 shadow-luxury dark:border-white/10 dark:bg-white/[0.06]">
                 <MapPin className="text-gold" />
