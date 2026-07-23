@@ -39,12 +39,9 @@ export default function ContactPage() {
                 <MapPin className="text-gold" />
                 {company.address}
               </p>
-              <div className="rounded-[24px] border border-ink/10 bg-white p-5 shadow-luxury dark:border-white/10 dark:bg-white/[0.06]">
-                {company.hours.map((hour) => (
-                  <p key={hour} className="font-medium text-ink/75 dark:text-white/72">
-                    {hour}
-                  </p>
-                ))}
+              <div className="rounded-[24px] border border-gold/20 bg-gold/10 p-5 shadow-luxury">
+                <p className="font-display text-lg font-semibold text-ink dark:text-white">Afspraak</p>
+                <p className="mt-2 font-medium text-ink/75 dark:text-white/72">{company.appointmentNote}</p>
               </div>
             </div>
           </Reveal>

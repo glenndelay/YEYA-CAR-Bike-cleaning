@@ -7,7 +7,6 @@ export const localBusinessSchema = {
   description: "Kleinschalig poets- en detailingbedrijf voor auto's en motoren. Auto poetsen, motor poetsen, auto detailing, polijsten en lakbescherming.",
   telephone: company.phone,
   email: company.email,
-  openingHours: ["Mo-Fr 08:30-18:00", "Sa 09:00-16:00"],
   priceRange: "€€€",
   image: "https://yeya-car-bike-cleaning.vercel.app/images/yeya-logo.png",
   url: "https://yeya-car-bike-cleaning.vercel.app"

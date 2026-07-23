@@ -26,7 +26,7 @@ export const company = {
   email: "yeyacarcleaning@gmail.com",
   address: "Op afspraak, locatie in overleg",
   whatsapp: "31642538620",
-  hours: ["Ma - Vr: 08:30 - 18:00", "Za: 09:00 - 16:00", "Zo: op afspraak"],
+  appointmentNote: "Wij werken uitsluitend op afspraak.",
   instagram: "@yeyacar"
 };
 
@@ -131,7 +131,14 @@ export const pricingSections = [
         features: ["Alles uit Silver", "Lak kleien", "1-staps polijsten", "Waxlaag aanbrengen", "Motorruimte reinigen"]
       },
       {
-        name: "Diamond Detail",
+        name: "Platinum",
+        price: "Vanaf €220",
+        icon: Crown,
+        featured: true,
+        features: ["Alles uit Gold", "Meerstaps polijsten", "Lakverzegeling"]
+      },
+      {
+        name: "Diamond",
         price: "Vanaf €499",
         icon: Gem,
         diamond: true,
@@ -180,7 +187,14 @@ export const pricingSections = [
         features: ["Alles uit Silver", "Lak kleien", "1-staps polijsten", "Waxlaag aanbrengen", "Motorblok reinigen", "Kunststof en rubber beschermen"]
       },
       {
-        name: "Diamond Detail",
+        name: "Platinum",
+        price: "Vanaf €180",
+        icon: Crown,
+        featured: true,
+        features: ["Alles uit Gold", "Meerstaps polijsten", "Lakverzegeling"]
+      },
+      {
+        name: "Diamond",
         price: "Vanaf €349",
         icon: Gem,
         diamond: true,
@@ -327,15 +341,5 @@ export const whyChooseUs = [
 ];
 
 export const partners = ["Auto poetsen", "Motor poetsen", "Auto detailing", "Lakcorrectie", "Keramische coating"];
-
-export const quoteOptions = [
-  { label: "Interieur", value: 85 },
-  { label: "Exterieur", value: 95 },
-  { label: "Polijsten", value: 175 },
-  { label: "Keramische coating", value: 395 },
-  { label: "Koplamprestauratie", value: 75 },
-  { label: "Bekleding reinigen", value: 120 },
-  { label: "Ozonbehandeling", value: 55 }
-];
 
 export const trustIcons = [ShieldCheck, Star, Brush, Phone];

@@ -232,7 +232,7 @@ function Packages() {
                     href={`/prijzen#${section.id}`}
                     className="focus-ring mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gold px-6 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-[#ffd449]"
                   >
-                    {isAuto ? "Bekijk alle autoprijzen" : "Bekijk alle motorprijzen"}
+                    Bekijk alle prijzen
                     <ArrowRight size={17} aria-hidden="true" />
                   </Link>
                 </article>
@@ -360,7 +360,8 @@ function Contact() {
             <a className="focus-ring flex items-center gap-3 rounded-2xl p-2" href={`mailto:${company.email}`}><Mail className="text-purple dark:text-gold" /> {company.email}</a>
             <p className="flex items-center gap-3 p-2"><MapPin className="text-purple dark:text-gold" /> {company.address}</p>
             <div className="rounded-[22px] bg-white p-5 dark:bg-white/[0.06]">
-              {company.hours.map((hour) => <p key={hour} className="font-medium">{hour}</p>)}
+              <p className="font-display font-semibold text-ink dark:text-white">Afspraak</p>
+              <p className="mt-2 font-medium">{company.appointmentNote}</p>
             </div>
           </div>
         </Reveal>
